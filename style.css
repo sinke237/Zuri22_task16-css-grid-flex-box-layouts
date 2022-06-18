@@ -1,0 +1,114 @@
+/* flex-box layout */
+/* find the style for grid layout from line number 61, thanks. */
+
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 18vh;
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+.container .row {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: row wrap;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 95%);
+
+}
+.container .row .col {
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10vh 6vh 10vh 6vh;
+    border-radius: 4px 0 0 4px;
+    background-color:  hsl(31, 77%, 52%);
+}
+.container .row .col1 {
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10vh 6vh 10vh 6vh;
+    background-color:  hsl(184, 100%, 22%);
+}
+.container .row .col2 {
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10vh 6vh 10vh 6vh;
+    border-radius: 0 4px 4px 0;
+    background-color:  hsl(179, 100%, 13%);
+}
+h4 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 22px;
+    color: #EDFFFF;
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: #EDFFFF;
+}
+button {
+    width: 25vh;
+    height: 6vh;
+    border-radius: 5vh;
+    color: inherit;
+    border-style: none;
+}
+
+/* grid layout */
+
+.grid-container {
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item1 {
+    background-color: #ee7606;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item2 {
+    background-color: hsl(38, 84%, 54%);
+    height: 100%;
+}
+.item3 {
+    background-color: hsl(138, 85%, 31%);
+    height: 100%;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item4 {
+    background-color: hsl(188, 84%, 49%);
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item5 {
+    background-color: hsl(188, 84%, 49%);
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+p {
+    color: transparent;
+}
